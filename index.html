@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balckjack Game</title>
+
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+</head>
+<body>
+    <header id="header">
+        <h1 id="title">Blackjack Game</h1>
+    </header>
+
+    <div id="play-area-wrap">
+        <div id="play-area">
+            <div id="dealer">
+                <div class="section-header">
+                    <h2 class="text-center">
+                        Dealer
+                        (<span id="dealer-total">0</span> Points)
+                    </h2>
+                </div>
+
+                <div class="cards" style="height: 100px;" id="dealer-cards"></div>
+            </div>
+
+            <div id="game-controls">
+                <button class="btn" id="deal">Deal</button>
+                <button class="btn" id="hit" disabled>Hit</button>
+                <button class="btn" id="stand" disabled>Stand</button>
+            </div>
+
+            <div id="players"></div>
+        </div>
+    </div>
+
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <span onclick="hideResultModal()" class="close">&times;</span>
+            <p id="result">Game result</p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
