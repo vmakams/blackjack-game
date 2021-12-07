@@ -203,7 +203,7 @@ function getCardImage(hand, cardIndex, isHidden = false) {
   console.log(cardIndex)
   var cardPosition = (cardIndex + 1) * 20;
 
-  return `<img class="card" style="left: ${cardPosition}px; z-index: ${cardIndex}" src="/assets/images/cards/${cardName}">`;
+  return `<img class="card" style="left: ${cardPosition}px; z-index: ${cardIndex}" src="assets/images/cards/${cardName}">`;
 }
 
 function checkPlayerBust(playerId) {
